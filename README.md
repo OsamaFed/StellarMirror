@@ -26,7 +26,7 @@
 To run locally:
 
 ```bash
-git clone https://github.com/your-username/stellar-mirror.git
+git clone https://github.com/osamafed/stellar-mirror.git
 cd stellar-mirror
 open index.html
 ```
