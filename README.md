@@ -1,6 +1,7 @@
 # 🌌 Stellar Mirror 🔭🪞
 
-![Stellar Mirror Preview](./stellar-mirror-preview.jpg)
+![Stellar Mirror Preview](![image](https://github.com/user-attachments/assets/4eecb173-3d78-4fa1-8d24-c8f8b8c30f67)
+)
 
 **Stellar Mirror** is an interactive web app that lets you compare two images from NASA's Astronomy Picture of the Day (APOD) archive using any two dates you choose.
 
