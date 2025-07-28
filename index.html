@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compare NASA's Astronomy Pictures of the Day side by side. Explore the cosmos through stunning space imagery from different dates.">
+    <meta name="keywords" content="NASA, APOD, astronomy, space, stars, galaxies, nebula, compare images, stellar mirror">
+
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://stellarmirror.netlify.app"/>
+    <meta property="og:title" content="Stellar Mirror 🌌| NASA APOD Comparison">
+    <meta property="og:description" content="Compare NASA's Astronomy Pictures of the Day side by side. Explore the cosmos through stunning space imagery.">
+    <meta property="og:image" content="https://i.imgur.com/BxA8706.jpeg">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Stellar Mirror 🌌| NASA APOD Comparison">
+    <meta name="twitter:description" content="Compare NASA's Astronomy Pictures of the Day side by side. Explore the cosmos through stunning space imagery.">
+    <meta name="twitter:image" content="https://i.imgur.com/BxA8706.jpeg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://stellarmirror.netlify.app">
+
+    <!-- Title with Emoji -->
+    <title>Stellar Mirror 🌌 | NASA Astronomy Picture Comparison</title>
+
+    <!-- باقي الروابط والأساليب -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Stellar Mirror",
+        "url": "https://stellarmirror.com",
+        "description": "Interactive tool for comparing NASA's Astronomy Pictures of the Day",
+        "applicationCategory": "Astronomy",
+        "operatingSystem": "Web",
+        "screenshot": "https://i.imgur.com/BxA8706.jpeg"
+      }
+    </script>
+</head>
+
+<body>
+  <div id="bg"></div>
+  <div class="stars" id="stars"></div>
+
+  <header>
+    <h1>Stellar Mirror</h1>
+    <div class="header-divider"></div>
+    <h3 class="site-description">
+      Travel through space and time by comparing NASA’s Astronomy Pictures of the Day. Uncover the hidden beauty of
+      galaxies, nebulas, and distant stars — where every image tells a cosmic story, and every date reveals a new
+      wonder.
+    </h3>
+  </header>
+
+  <div class="container">
+    <div class="image-container">
+      <input type="date" id="date1" class="date-input" 
+             placeholder="Select date" required
+             aria-label="First image date">
+      <div id="image1" class="image-frame"></div>
+    </div>
+
+    <div class="image-container">
+      <input type="date" id="date2" class="date-input"
+             placeholder="Select date" required
+             aria-label="Second image date">
+      <div id="image2" class="image-frame"></div>
+    </div>
+  </div>
+
+  <div class="button-group">
+    <button onclick="compareApod()" class="show-button">
+      <i class="fas fa-images"></i> Compare
+    </button>
+    <button onclick="randomDates()" class="random-button">
+      <i class="fas fa-random"></i> Random
+    </button>
+  </div>
+
+  
+  <div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modal-img" class="modal-content" loading="lazy" />
+  </div>
+
+  <footer class="footer">
+    <div class="footer-left">
+      <span class="bg-credit">
+        Background image <span class="by">by</span>
+        <a href="https://www.instagram.com/p/DHHcgEEs_5q/?igsh=bTI1d2k4dDA2bTNj" target="_blank" rel="noopener noreferrer">
+          Astronomicalrel
+        </a>
+      </span>
+    </div>
+    <div class="footer-right">
+      Made with ❤️ and passion by
+      <a href="https://x.com/osamafed?s=21" target="_blank" rel="noopener noreferrer">Osamafed</a>.
+      <span class="copyright">© 2025 All rights reserved.</span>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
